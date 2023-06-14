@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  workspace:
+    env_file: .env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: bash -c "while true; do sleep 1; done"
+    volumes:
+      - ..:/workspace:cached
+    tty: true

@@ -1,0 +1,55 @@
+# Ignore Terraform .tfstate files and .terraform directory
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Ignore Terraform .tfvars files which might contain sensitive data
+*.tfvars
+
+# Ignore Python bytecode and build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Ignore virtualenv and pipenv directories
+venv/
+*.venv
+Pipfile.lock
+
+# Ignore editor and IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore .env files that might contain sensitive data
+.env
