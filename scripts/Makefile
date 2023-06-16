@@ -20,10 +20,8 @@ ENV ?= dev
 all: init validate build deploy
 
 init:
-	if [ ! -d "$(ENVIRONMENTS_DIR)/$(ENV)/.terraform" ]; then \
-		@echo "Initializing Terraform"; \
-		cd $(ENVIRONMENTS_DIR)/$(ENV) && terraform init; \
-	fi
+	@echo "Initializing Terraform"; \
+	cd $(ENVIRONMENTS_DIR)/$(ENV) && terraform init; \
 
 validate:
 	@echo "Validating Terraform configuration"
